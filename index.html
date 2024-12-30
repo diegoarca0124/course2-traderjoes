@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="bg-cream">
+        <div class="d-flex justify-content-end py-2 px-5">
+            <ul class="list-inline d-flex gap-4 mb-0">
+                <li>
+                    <a href="" class="top-link">
+                        <ion-icon name="location-outline"></ion-icon>
+                        Select your store
+                    </a>
+                </li>
+                <li class="d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <a href="" class="top-link">Stores</a>
+                </li>
+                <li class="d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <a href="" class="top-link">About Us</a>
+                </li>
+                <li class="d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <a href="" class="top-link">Announcements</a>
+                </li>
+                <li class="d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <a href="" class="top-link">Stores</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+        <div class="container-fluid mx-w-2-7">
+          <div>
+            <span class="me-5 cursor-pointer" onclick="openMenu()">
+                <img id="showImg" src="assets/home/icon-3.svg" alt="">
+                <img id="closeImg" src="assets/home/icon-4.svg" class="d-none" alt="">
+            </span>
+            <a class="navbar-brand" href="#">
+                <img src="assets/home/logo.svg" alt="">
+            </a>
+          </div>
+
+          <div class="d-flex gap-4" >
+            <div class="d-flex">
+                <img src="assets/home/icon-1.svg" alt="" class="me-2">
+                <div class="d-none d-lg-block">
+                    <a href="" class="fw-500 ls-1px text-dark text-small text-link">Search</a>
+                </div>
+                
+            </div>
+            <div class="d-flex flex-wrap">
+                <img src="assets/home/icon-2.svg" alt="" class="me-2">
+                <div  class="d-none d-lg-block">
+                    <a href="" class="fw-500 text-dark text-small text-link">Shopping List</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="position-relative"></div>
+    <nav class="bookmark-nav z-index-2 d-none d-xl-block d-xxl-block" id="bookmark-nav">
+        <ul cla>
+            <li class="d-flex flex-column mb-3">
+                <img src="assets/home/icon-5.webp" alt="">
+                <span class="text-link fw-500 text-small text-center">Products</span>
+            </li>
+            <li class="d-flex flex-column mb-3"> 
+                <img src="assets/home/icon-6.webp" alt="">
+                <span class="text-link fw-500 text-small text-center">Discover</span>
+            </li>
+            <li class="d-flex flex-column mb-3">
+                <img src="assets/home/icon-7.webp" alt="">
+                <span class="text-link fw-500 text-small text-center">Recipes</span>
+            </li>
+            <li class="d-flex flex-column">
+                <img src="assets/home/icon-8.webp" alt="">
+                <span class="text-link fw-500 text-small text-center">Listen</span>
+            </li>
+        </ul>
+        <div class="position-relative">
+            <div class="position-absolute bookmark-left">
+
+            </div>
+            <div class="position-absolute bookmark-right">
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex gap-3 d-none position-absolute bg-cream w-100" id="MenuBar" 
+    style="z-index: 1;height: -webkit-fill-available !important;">
+        <div class="d-none d-lg-block">
+            <div class="d-flex p-5rem">
+                <div class="d-flex">
+                    <div class="d-flex flex-column text-small gap-2">
+                        <h4 class="text-link"><strong>Products</strong></h4>     
+                    
+                        <span class="text-link"><strong>What's New</strong></span>
+                        <div class="d-flex flex-column gap-2">
+                            <span class="text-link"><strong>Food</strong></span>
+                            <ul class="list-inline mb-0 d-flex flex-column gap-2">
+                                <li>
+                                    <a href="" class="text-muted text-link">Bakery</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Cheese</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Dairy & Eggs</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Dips, Sauces & Dressings</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Fresh Prepared Foods</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">From the Freezer</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Fresh Fruits & Veggies</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Meat, Seafood & Plant-based</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">For the Pantry</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Snacks & Sweets</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <span class="text-link"><strong>Beverages</strong></span>
+                        <span class="text-link"><strong>Flower & Plants</strong></span>
+                        <span class="text-link"><strong>Everything Else</strong></span>
+                    </div>
+                    <img src="assets/home/icon-5.webp" class="h-100px">
+                </div>
+                <div class="d-flex flex-column gap-4" id="second-section">
+                    <div class="d-flex mr-3rem">
+                        <div class="d-flex flex-column text-small gap-2">
+                            <h4 class="text-link"><strong>Discover</strong></h4>     
+            
+                            <ul class="list-inline mb-0 d-flex flex-column gap-2">
+                                <li>
+                                    <a href="" class="text-muted text-link">Bakery</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Cheese</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Dairy & Eggs</a>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                        <img src="assets/home/icon-6.webp" class="h-100px">
+                    </div>
+                    <div class="d-flex mr-3rem">
+                        <div class="d-flex flex-column text-small gap-2">
+                            <h4 class="text-link"><strong>Recipes</strong></h4>     
+            
+                            <ul class="list-inline mb-0 d-flex flex-column gap-2">
+                                <li>
+                                    <a href="" class="text-muted text-link">Bakery</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Cheese</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Dairy & Eggs</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Dairy & Eggs</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <img src="assets/home/icon-7.webp" class="h-100px">
+                    </div>
+                    <div class="d-flex mr-3rem">
+                        <div class="d-flex flex-column text-small gap-2">
+                            <h4 class="text-link"><strong>Listen</strong></h4>     
+                        </div>
+                        <img src="assets/home/icon-8.webp" class="h-100px">
+                    </div>
+                    <div class="d-flex mr-3rem">
+                        <div class="d-flex flex-column text-small gap-2">
+                            <h4 class="text-link"><strong>Careers</strong></h4>     
+                        </div>
+                        <img src="assets/home/icon-9.webp" class="h-100px">
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-4" id="third-section">
+                    <div class="d-flex mr-3rem">
+                        <div class="d-flex flex-column text-small gap-2">
+                            <h4 class="text-link"><strong>About Us</strong></h4>     
+            
+                            <ul class="list-inline mb-0 d-flex flex-column gap-2">
+                                <li>
+                                    <a href="" class="text-muted text-link">Bakery</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Cheese</a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-muted text-link">Dairy & Eggs</a>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="d-flex mr-3rem">
+                        <div class="d-flex flex-column text-small gap-2">
+                            <h4 class="text-link"><strong>Find A Store</strong></h4>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-xs-block d-sm-block d-md-block d-lg-none w-100">
+            <div class="p-2-5rem">
+                <ul class="list-group w-100 bg-transparent" id="rsMenu">
+                    <li class="list-group-item">
+                        <img src="assets/home/icon-5.webp" alt="" class="w-50px me-3">
+                        <span class="label-menu">Products</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="assets/home/icon-6.webp" alt="" class="w-50px me-3">
+                        <span class="label-menu">Discover</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="assets/home/icon-7.webp" alt="" class="w-50px me-3">
+                        <span class="label-menu">Recipes</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="assets/home/icon-8.webp" alt="" class="w-50px me-3">
+                        <span class="label-menu">Listen</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="assets/home/icon-9.webp" alt="" class="w-50px me-3">
+                        <span class="label-menu">Careers</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="label-menu">About Us</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="label-menu">Find A Store</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <main id="main">
+        <section class="position-relative" style="z-index: 0;background-image: url(assets/home/webp-bg.webp);">
+            <div class="container">
+              <div class="row py-5">
+                  <div class="col-lg-6 col-md-12 d-flex align-items-center order-md-2" style="padding-left: 4rem !important;">
+                      <div>
+                          <h1 class="ff-Freight-Semibold fs-3rem mb-4">Pizza Party Recipe Contest</h1>
+                          <p class="ff-Freight-Medium mb-5" style="font-size: 1.2rem;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis recusandae facilis eligendi sunt, consequuntur suscipit magnam voluptates! Optio modi provident similique a ex exercitationem eos omnis ad voluptatem aliquid!</p>
+                          <a class="btn-style">
+                              <div class="leftArrow"></div>
+                              ENTER NOW
+                              <div class="rightArrow"></div>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 order-md-1">
+                      <img src="assets/home/webp-1280.webp" class="w-100" style="max-width: 700px !important;transform: rotate(3deg);">
+                  </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1 class="ff-Freight-Bold">Welcome to Trader Joe's!</h1>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">What's New?</h5>
+                            <img src="assets/home/icon-11.webp" class="img_header">
+                        </div>
+                        <div class="swiper" id="swiper-1">
+                            <div class="swiper-wrapper mb-4">
+                              <div class="swiper-slide">
+                                <div class="card-img mb-4">
+                                    <img src="assets/home/banner-1.webp" alt="" class="w-100 img-slide">
+                                </div>
+                                <div class="card-text">
+                                    <h2 class="fw-900 ff-Freight-Medium">Lorem Ipsum</h2>
+                                    <p class="fs-1-1 ff-Freight-Semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, debitis praesentium, fugiat atque quos repellendus cumque illo necessitatibus architecto sequi possimus et cum earum reprehenderit, est ipsum magnam laborum esse.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-img mb-4">
+                                    <img src="assets/home/banner-2.webp" alt="" class="w-100 img-slide">
+                                </div>
+                                <div class="card-text">
+                                    <h2 class="fw-900 ff-Freight-Medium">Lorem Ipsum</h2>
+                                    <p class="fs-1-1 ff-Freight-Semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, debitis praesentium, fugiat atque quos repellendus cumque illo necessitatibus architecto sequi possimus et cum earum reprehenderit, est ipsum magnam laborum esse.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-img mb-4">
+                                    <img src="assets/home/banner-3.webp" alt="" class="w-100 img-slide">
+                                </div>
+                                <div class="card-text">
+                                    <h2 class="fw-900 ff-Freight-Medium">Lorem Ipsum</h2>
+                                    <p class="fs-1-1 ff-Freight-Semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, debitis praesentium, fugiat atque quos repellendus cumque illo necessitatibus architecto sequi possimus et cum earum reprehenderit, est ipsum magnam laborum esse.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="card-img mb-4">
+                                    <img src="assets/home/banner-4.webp" alt="" class="w-100 img-slide">
+                                </div>
+                                <div class="card-text">
+                                    <h2 class="fw-900 ff-Freight-Medium">Lorem Ipsum</h2>
+                                    <p class="fs-1-1 ff-Freight-Semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, debitis praesentium, fugiat atque quos repellendus cumque illo necessitatibus architecto sequi possimus et cum earum reprehenderit, est ipsum magnam laborum esse.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide"> 
+                                <div class="card-img mb-4">
+                                    <img src="assets/home/banner-6.webp" alt="" class="w-100 img-slide">
+                                </div>
+                                <div class="card-text">
+                                    <h2 class="fw-900 ff-Freight-Medium">Lorem Ipsum</h2>
+                                    <p class="fs-1-1 ff-Freight-Semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, debitis praesentium, fugiat atque quos repellendus cumque illo necessitatibus architecto sequi possimus et cum earum reprehenderit, est ipsum magnam laborum esse.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" id="card-podcast" style="padding-left: 3rem;">
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">Podcast</h5>
+                        </div>
+
+                        <div class="card first-card">
+                            <div class="card-body">
+                                <div class="d-flex border-bottom pb-3">
+                                    <div style="min-width: 70px;">
+                                        <button class="btn-icon-style mt-3">
+                                            <img src="assets/home/icon-10.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <div class="mb-2">
+                                            <span class="text-label">ICYMI</span>
+                                        </div>
+                                        <h5 class="fw-900 ff-Freight-Medium">
+                                            What's Up With Trader Joe's Mini
+                                        </h5>
+                                        <small class="text-muted">04 min 14 sec</small>
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <img src="assets/home/banner-7.webp" class="w-100">
+                                </div>
+                                <div class="w-100 text-center py-2">
+                                    <a class="btn-style" style="text-transform: uppercase;">
+                                        <div class="leftArrow"></div>
+                                        Past ‘Casts
+                                        <div class="rightArrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" style="margin-bottom: 5rem;">
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">
+                                Believe-Eat-Or-Not Recipes
+                            </h5>
+                            <img src="assets/home/icon-12.webp" class="img_header">
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-5">
+                    <div class="col-lg-4" style="transform: rotate(1deg);">
+                        <div class="card second-card">
+                            <div class="recipe-card">
+                                <span>DELISH!</span>
+                            </div>
+                            <div class="card-header">
+                                <h3>
+                                    Crispy Prosciutto <br>
+                                    Grilled Cheese
+                                </h3>
+                            </div>
+                            <div class="recipe-img">
+                                <img src="assets/home/delish-banner.webp"  class="w-100">
+                            </div>
+                            <div class="card-body p-0 m-3 mb-0">
+                                <p class="ff-Freight-Medium mb-0" style="font-size: 1.1rem;">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nesciunt adipisci inventore voluptate numquam aut, blanditiis tenetur, optio quidem dignissimos nobis sunt ut a hic sint quo voluptatum eum harum?
+                                </p>
+                            </div>
+                            <div class="card-body p-0 m-3 d-flex justify-content-between border-top border-bottom py-2">
+                                <small>Serves 1</small>
+                                <small>Time 15 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" style="transform: translateY(-30px);">
+                        <div class="card second-card" style="background-color: #e4e9ea !important;">
+                            <div class="recipe-card">
+                                <span>DELISH!</span>
+                            </div>
+                            <div class="card-header">
+                                <h3>
+                                    Crispy Prosciutto <br>
+                                    Grilled Cheese
+                                </h3>
+                            </div>
+                            <div class="recipe-img">
+                                <img src="assets/home/sogood-banner.webp"  class="w-100">
+                            </div>
+                            <div class="card-body p-0 m-3 mb-0">
+                                <p class="ff-Freight-Medium mb-0" style="font-size: 1.1rem;">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nesciunt adipisci inventore voluptate numquam aut, blanditiis tenetur, optio quidem dignissimos nobis sunt ut a hic sint quo voluptatum eum harum?
+                                </p>
+                            </div>
+                            <div class="card-body p-0 m-3 d-flex justify-content-between border-top border-bottom py-2">
+                                <small>Serves 1</small>
+                                <small>Time 15 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" style="transform: rotate(-2deg);">
+                        <div class="card second-card" style="background-color: #e8eadf !important;">
+                            <div class="recipe-card">
+                                <span>DELISH!</span>
+                            </div>
+                            <div class="card-header">
+                                <h3>
+                                    Crispy Prosciutto <br>
+                                    Grilled Cheese
+                                </h3>
+                            </div>
+                            <div class="recipe-img">
+                                <img src="assets/home/jum-banner.webp"  class="w-100">
+                            </div>
+                            <div class="card-body p-0 m-3 mb-0">
+                                <p class="ff-Freight-Medium mb-0" style="font-size: 1.1rem;">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nesciunt adipisci inventore voluptate numquam aut, blanditiis tenetur, optio quidem dignissimos nobis sunt ut a hic sint quo voluptatum eum harum?
+                                </p>
+                            </div>
+                            <div class="card-body p-0 m-3 d-flex justify-content-between border-top border-bottom py-2">
+                                <small>Serves 1</small>
+                                <small>Time 15 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5rem;">
+                    <div class="col-12 text-center">
+                        <a class="btn-style">
+                            <div class="leftArrow"></div>
+                            SEE MORE RECIPES
+                            <div class="rightArrow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" style="margin-bottom: 2rem;">
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">
+                                And There's More...
+                            </h5>
+                            <img src="assets/home/icon-13.webp" class="img_header">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-5">
+                        <div class="card-img">
+                            <img src="assets/home/banner-9.webp" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex flex-column gap-2">
+                            <span class="text-label">Guides</span>
+                            <small>March 18, 2024</small>
+
+                            <h2 class="fw-900 ff-Freight-Medium mb-0">Lorem Ipsum</h2>
+                            <p class="fs-1-1 ff-Freight-Semibold">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque tempora mollitia provident perferendis nisi corporis at illum esse, accusamus a ratione quasi voluptatem consequatur commodi maiores, quis repellat nostrum est debitis voluptas neque maxime culpa inventore? Consequuntur possimus cum nostrum saepe, tempora inventore culpa iure atque nemo reiciendis porro! Dolore delectus quod maiores dolorum. Ab atque repudiandae porro veniam repellat?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="assets/home/banner-10.webp" class="w-100">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="d-flex flex-column gap-2">
+                                    <span class="text-label">Guides</span>
+                                    <small>March 18, 2024</small>
+        
+                                    <h5 class="fw-900 ff-Freight-Medium mb-0">Lorem Ipsum</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-1px"></div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="assets/home/banner-8.webp" class="w-100">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="d-flex flex-column gap-2">
+                                    <span class="text-label">Guides</span>
+                                    <small>March 18, 2024</small>
+        
+                                    <h5 class="fw-900 ff-Freight-Medium mb-0">Lorem Ipsum</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-1px"></div>
+                        <div class="row">
+                            <div class="col-12" style="margin-top: 3rem;">
+                                <a class="btn-style">
+                                    <div class="leftArrow"></div>
+                                    SEE MORE RECIPES
+                                    <div class="rightArrow"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" style="max-height: 350px;">
+                        <img src="assets/home/icon-14.webp" style="max-width: 100%;height: 100%;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="container">
+            <hr>
+        </div>
+
+        <section class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">
+                                Read It & Eat
+                            </h5>
+                        </div>
+
+                        <ol class="mb-5">
+                            <li>
+                                <div class="d-flex flex-column gap-2">
+                                    <h6 class="ff-Freight-Bold mb-0">Just Here for the Cheese</h6>
+                                    <span class="ff-Freight-Medium">In the cheese section at your neighborhood Trader Joe’s, you’ll find a carefully curated selection of cheeses, like Trader Joe’s Cheddar Cheese with Caramelized Onions, featured in this recipe for Cheesy Olive-Stuffed Shortbread Bites...</span>
+                                    <small class="f-Freight-Medium">January 29, 2024</small>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex flex-column gap-2">
+                                    <h6 class="ff-Freight-Bold mb-0">Just Here for the Cheese</h6>
+                                    <span class="ff-Freight-Medium">In the cheese section at your neighborhood Trader Joe’s, you’ll find a carefully curated selection of cheeses, like Trader Joe’s Cheddar Cheese with Caramelized Onions, featured in this recipe for Cheesy Olive-Stuffed Shortbread Bites...</span>
+                                    <small class="f-Freight-Medium">January 29, 2024</small>
+                                </div>
+                            </li>
+                        </ol>
+
+
+                        <a class="btn-style">
+                            <div class="leftArrow"></div>
+                            SEE MORE RECIPES
+                            <div class="rightArrow"></div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6" style="display: flex ; align-items: end;">
+                        <img src="assets/home/icon-15.webp" alt="" style="width: 60%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">
+                                So, What Else is New?
+                            </h5>
+                        </div>
+
+                        <div class="swiper" id="swiper-2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <div class="card-product-img">
+                                        <img src="assets/home/product-1.webp" class="w-100 h-100">
+                                    </div>
+                                    <div class="card-body" style="height: 100px;">
+                                        <span class="text-label">Salads, Soups & Sides</span>
+                                        <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                    <div class="card-body text-end">
+                                        <span>
+                                            <strong>$4.99</strong>
+                                            / 10oz
+                                        </span>
+                                    </div>
+                                    <div class="card-body text-center" style="height: 80px;">
+                                        <a class="btn-style" style="padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                            <div class="leftArrow"></div>
+                                            SEE MORE RECIPES
+                                            <div class="rightArrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <div class="card-product-img">
+                                        <img src="assets/home/product-2.webp" class="w-100 h-100">
+                                    </div>
+                                    <div class="card-body" style="height: 100px;">
+                                        <span class="text-label">Salads, Soups & Sides</span>
+                                        <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                    <div class="card-body text-end">
+                                        <span>
+                                            <strong>$4.99</strong>
+                                            / 10oz
+                                        </span>
+                                    </div>
+                                    <div class="card-body text-center" style="height: 80px;">
+                                        <a class="btn-style" style="padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                            <div class="leftArrow"></div>
+                                            SEE MORE RECIPES
+                                            <div class="rightArrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <div class="card-product-img">
+                                        <img src="assets/home/product-3.webp" class="w-100 h-100">
+                                    </div>
+                                    <div class="card-body" style="height: 100px;">
+                                        <span class="text-label">Salads, Soups & Sides</span>
+                                        <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                    <div class="card-body text-end">
+                                        <span>
+                                            <strong>$4.99</strong>
+                                            / 10oz
+                                        </span>
+                                    </div>
+                                    <div class="card-body text-center" style="height: 80px;">
+                                        <a class="btn-style" style="padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                            <div class="leftArrow"></div>
+                                            SEE MORE RECIPES
+                                            <div class="rightArrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <div class="card-product-img">
+                                        <img src="assets/home/product-4.webp" class="w-100 h-100">
+                                    </div>
+                                    <div class="card-body" style="height: 100px;">
+                                        <span class="text-label">Salads, Soups & Sides</span>
+                                        <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                    <div class="card-body text-end">
+                                        <span>
+                                            <strong>$4.99</strong>
+                                            / 10oz
+                                        </span>
+                                    </div>
+                                    <div class="card-body text-center" style="height: 80px;">
+                                        <a class="btn-style" style="padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                            <div class="leftArrow"></div>
+                                            SEE MORE RECIPES
+                                            <div class="rightArrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <div class="card-product-img">
+                                        <img src="assets/home/product-5.webp" class="w-100 h-100">
+                                    </div>
+                                    <div class="card-body" style="height: 100px;">
+                                        <span class="text-label">Salads, Soups & Sides</span>
+                                        <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                    <div class="card-body text-end">
+                                        <span>
+                                            <strong>$4.99</strong>
+                                            / 10oz
+                                        </span>
+                                    </div>
+                                    <div class="card-body text-center" style="height: 80px;">
+                                        <a class="btn-style" style="padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                            <div class="leftArrow"></div>
+                                            SEE MORE RECIPES
+                                            <div class="rightArrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <div class="card-product-img">
+                                        <img src="assets/home/product-6.webp" class="w-100 h-100">
+                                    </div>
+                                    <div class="card-body" style="height: 100px;">
+                                        <span class="text-label">Salads, Soups & Sides</span>
+                                        <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                    <div class="card-body text-end">
+                                        <span>
+                                            <strong>$4.99</strong>
+                                            / 10oz
+                                        </span>
+                                    </div>
+                                    <div class="card-body text-center" style="height: 80px;">
+                                        <a class="btn-style" style="padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                            <div class="leftArrow"></div>
+                                            SEE MORE RECIPES
+                                            <div class="rightArrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <div class="card-product-img">
+                                        <img src="assets/home/product-7.webp" class="w-100 h-100">
+                                    </div>
+                                    <div class="card-body" style="height: 100px;">
+                                        <span class="text-label">Salads, Soups & Sides</span>
+                                        <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                    </div>
+                                    <div class="card-body text-end">
+                                        <span>
+                                            <strong>$4.99</strong>
+                                            / 10oz
+                                        </span>
+                                    </div>
+                                    <div class="card-body text-center" style="height: 80px;">
+                                        <a class="btn-style" style="padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                            <div class="leftArrow"></div>
+                                            SEE MORE RECIPES
+                                            <div class="rightArrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-center" style="margin-top: 3rem;">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center">
+                        <img src="assets/home/icon-16.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">
+                                Subscribe
+                            </h5>
+                        </div>
+                        <h4 class="ff-Freight-Semibold mb-4">Get our newsletter delivered to
+                            your electronic mailbox!
+                        </h4>
+
+                        <form action="" class="bg-form">
+                            <div id="content-form" class="d-flex w-100" style="padding-top: 1rem;">
+                                <div class="d-flex flex-column gap-4">
+                                    <div>
+                                       <label for="">
+                                            <strong>Email Address</strong>
+                                       </label>
+                                       <input type="text" class="form-control" placeholder="example@domain.com">
+                                    </div>
+                                    <div>
+                                        <label for="">
+                                             <strong>Zip Code</strong>
+                                        </label>
+                                        <input type="text" class="form-control" placeholder="1234">
+                                    </div>
+                         
+                                    <a class="btn-style" style="text-align: center;text-transform: uppercase;padding: .5rem 1.5rem !important;font-size: .8rem;">
+                                        <div class="leftArrow"></div>
+                                        Subscribe
+                                        <div class="rightArrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5" style="padding-left: 5rem;">
+                        <div class="py-5 position-relative">
+                            <h5 class="ff-Cerebrisans-ExtraBold section_header">
+                                In Case You Missed It!
+                            </h5>
+                        </div>
+
+                        <ul style="list-style: none;padding-left: 0px;">
+                            <li class="mb-3" style="border-bottom: 1px solid #d3d3d3;padding-bottom: 1rem;">
+                                <div class="d-flex flex-column">
+                                    <span class="text-label">Salads, Soups & Sides</span>
+                                    <small class="text-muted mb-2">April 19, 2024</small>
+                                    <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                </div>
+                            </li>
+                            <li class="mb-3" style="border-bottom: 1px solid #d3d3d3;padding-bottom: 1rem;">
+                                <div class="d-flex flex-column">
+                                    <span class="text-label">Salads, Soups & Sides</span>
+                                    <small class="text-muted mb-2">April 19, 2024</small>
+                                    <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                </div>
+                            </li>
+                            <li style="border-bottom: 1px solid #d3d3d3;padding-bottom: 1rem;">
+                                <div class="d-flex flex-column">
+                                    <span class="text-label">Salads, Soups & Sides</span>
+                                    <small class="text-muted mb-2">April 19, 2024</small>
+                                    <h5 class="fw-900 ff-Freight-Medium">Lorem ipsum dolor sit amet.</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="" style="">
+        <div class="position-relative py-5" style="overflow: hidden;background-color: #e8eadf;border-bottom: 1px solid black;">
+            <div class="container mb-5">
+                <div class="d-flex justify-content-center" style="gap: 15rem !important;">
+                    <div class="text-center"> 
+                        <h5 class="mb-4">The Fearless Flyer</h5>
+                        <a class="btn-style" style="text-align: center;text-transform: uppercase;padding: .5rem 1.5rem !important;font-size: .8rem;">
+                            <div class="leftArrow"></div>
+                            Subscribe
+                            <div class="rightArrow"></div>
+                        </a>
+                    </div>
+                    <div class="text-center"> 
+                        <h5 class="mb-4">The Fearless Flyer</h5>
+                        <a class="btn-style" style="text-align: center;text-transform: uppercase;padding: .5rem 1.5rem !important;font-size: .8rem;">
+                            <div class="leftArrow"></div>
+                            Subscribe
+                            <div class="rightArrow"></div>
+                        </a>
+                    </div>
+                    <div class="text-center"> 
+                        <h5 class="mb-4">The Fearless Flyer</h5>
+                        <a class="btn-style" style="text-align: center;text-transform: uppercase;padding: .5rem 1.5rem !important;font-size: .8rem;">
+                            <div class="leftArrow"></div>
+                            Subscribe
+                            <div class="rightArrow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container position-relative">
+                <div class="d-flex justify-content-center py-4" style="gap: 10rem !important;">
+                    <div>
+                        <h6 class="ff-Cerebrisans-ExtraBold">Products</h6>
+                        <ul class="ff-Cerebrisans-Bold list-inline">
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">What's New</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Food</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Beverages</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Flowers & Plants</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark text-small">Everything else</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="ff-Cerebrisans-ExtraBold">Products</h6>
+                        <ul class="ff-Cerebrisans-Bold list-inline">
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">What's New</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Food</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Beverages</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Flowers & Plants</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark text-small">Everything else</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="ff-Cerebrisans-ExtraBold">Products</h6>
+                        <ul class="ff-Cerebrisans-Bold list-inline">
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">What's New</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Food</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Beverages</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Flowers & Plants</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark text-small">Everything else</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="ff-Cerebrisans-ExtraBold">Products</h6>
+                        <ul class="ff-Cerebrisans-Bold list-inline">
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">What's New</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Food</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Beverages</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="" class="text-dark text-small">Flowers & Plants</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark text-small">Everything else</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <img src="assets/home/icon-18.webp" class="position-absolute" style="width: 150px;bottom: 0px;left: 50px;">
+            </div>
+
+            <img id="icon-17" src="assets/home/icon-17.webp" alt="" class="position-absolute" 
+            style="width: 700px;top: 0;">
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-5">
+                <div>
+                    <h5>Follow us</h5>
+                    <div class="d-flex gap-3">
+                        <img src="assets/home/podcast.svg" alt="">
+                        <img src="assets/home/youtube.svg" alt="">
+                        <img src="assets/home/instagram.svg" alt="">
+                        <img src="assets/home/pinterest.svg" alt="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column">
+                        <small class="text-muted text-center">Copyright © Trader Joe’s 2024. All rights reserved.</small>
+                        <div class="d-flex gap-3">
+                            <a class="text-small text-dark">Lorem Ipsum</a>
+                            <a class="text-small text-dark">Lorem Ipsum</a>
+                            <a class="text-small text-dark">Lorem Ipsum</a>
+                            <a class="text-small text-dark">Lorem Ipsum</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/home/logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

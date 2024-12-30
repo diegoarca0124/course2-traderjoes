@@ -1,0 +1,633 @@
+
+@font-face {
+    font-family: "Cerebrisans Regular";
+    src: url(./assets/fonts/cerebrisans-regular.ttf);
+}
+
+@font-face {
+    font-family: "Cerebrisans Bold";
+    src: url(./assets/fonts/Cerebri\ Sans\ Book.ttf);
+}
+
+@font-face {
+    font-family: "Cerebrisans ExtraBold";
+    src: url(./assets/fonts/Cerebri\ Sans\ ExtraBold.ttf);
+}
+
+
+@font-face {
+    font-family: "FreightTextProMedium-Regular";
+    src: url(./assets/fonts/FreightTextProMedium-Regular.ttf);
+}
+
+@font-face {
+    font-family: "FreightTextProBold-Regular";
+    src: url(./assets/fonts/FreightTextProBold-Regular.ttf);
+}
+
+@font-face {
+    font-family: "FreightTextProSemibold-Regular";
+    src: url(./assets/fonts/FreightTextProSemibold-Regular.ttf);
+}
+
+.ff-Cerebrisans-Bold{
+    font-family: "Cerebrisans Bold" !important;
+}
+
+.ff-Cerebrisans-ExtraBold{
+    font-family: "Cerebrisans ExtraBold";
+}
+
+.ff-Freight-Medium{
+    font-family: "FreightTextProMedium-Regular" !important;
+}
+
+.ff-Freight-Semibold{
+    font-family: "FreightTextProSemibold-Regular" !important;
+}
+
+.ff-Freight-Bold{
+    font-family: "FreightTextProBold-Regular" !important; 
+}
+
+.fs-3rem{
+    font-size: 3rem !important;
+}
+
+.bg-cream{
+    background-color: #f8f8f2;
+}
+
+.top-link{
+    font-family: "Cerebrisans Regular" !important;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+}
+
+.mx-w-2-7{
+    padding-left: 2.7rem !important;
+    padding-right: 2.7rem !important;
+}
+
+.fw-500{
+    font-weight: 500 !important;
+}
+
+.fw-900{
+    font-weight: 900 !important;
+}
+
+.ls-1px{
+    letter-spacing: 1px !important;
+}
+
+.text-small{
+    font-size: 0.9rem !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.text-link:hover{
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+
+.border-bottom{
+    border-bottom: 1px solid black !important;
+}
+
+.h-100px{
+    height: 100px !important;
+}
+
+.p-5rem{
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important
+}
+
+.p-2-5rem{
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important
+}
+
+#second-section::before{
+    border-left: 1px solid #ccc;
+    content: "";
+    bottom: 10px;
+    position: absolute;
+    top: 30px;
+    left: auto;
+    right: auto;
+}
+
+#third-section::before{
+    border-left: 1px solid #ccc;
+    content: "";
+    bottom: 10px;
+    position: absolute;
+    top: 30px;
+    left: auto;
+    right: auto;
+}
+
+.mr-3rem{
+    margin-left: 3rem !important;
+}
+
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
+a.btn-style {
+    background-color: #fff;
+    color: #af0006;
+    border: 1px solid #a5684d;
+    min-width: 100px;
+    padding: .7rem 2rem;
+    box-shadow: 8px 8px 0 rgba(44,44,44,.2);
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    transition: box-shadow .25s;
+}
+
+.btn-icon-style {
+    background-color: #fff;
+    color: #af0006;
+    border: 1px solid #a5684d;
+    box-shadow: 5px 5px 0 rgba(44,44,44,.2);
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    transition: box-shadow .25s;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftArrow{
+    border-top: 1px solid #a5684d;
+    border-left: 1px solid #a5684d;
+    top: .18rem;
+    left: .18rem;
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+}
+
+.rightArrow{
+    border-bottom: 1px solid #a5684d;
+    border-right: 1px solid #a5684d;
+    bottom: .18rem;
+    right: .18rem;
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+}
+
+a.btn-style:hover{
+    border-width: 2px;
+    box-shadow: 10px 10px 0 rgba(44,44,44,.2);
+}
+
+.btn-style:hover .leftArrow{
+    border-width: 2px;
+}
+
+.btn-style:hover .rightArrow{
+    border-width: 2px;
+}
+
+.bookmark-nav{
+    width: 90px;
+    position: absolute;
+    background-color: white;
+    padding: .7rem;
+    left: 30px;
+    border: 1px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.bookmark-nav ul{
+    padding-left: 0px;
+}
+
+.bookmark-left{
+    width: 47px;
+    height: 52px;
+    background: linear-gradient(-33deg, transparent 45%, #fff 0);
+    top: 0;
+    left: -12px;
+    border-left: 1px solid black;
+    overflow: hidden;
+}
+
+.bookmark-right{
+    width: 47px;
+    height: 52px;
+    background: linear-gradient(33deg,transparent 45%, #fff 0);
+    top: 0;
+    right: -12px;
+    border-right: 1px solid black;
+    overflow: hidden;
+}
+
+.bookmark-left::before{
+    position: absolute;
+    width: 10px;
+    height: 64px;
+    border: 1px solid black;
+    background-color: #af0006;
+    content: "";
+    display: block;
+    transform: rotate(57deg);
+    left: 18px;
+}
+
+
+.bookmark-right::before{
+    position: absolute;
+    width: 10px;
+    height: 64px;
+    border: 1px solid black;
+    background-color: #af0006;
+    content: "";
+    display: block;
+    transform: rotate(299deg);
+    right: 18px;
+}
+
+.z-index-2{
+    z-index: 2 !important;
+}
+
+.bg-transparent{
+    background-color: transparent !important;
+}
+
+#rsMenu .list-group-item{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.w-50px{
+    width: 50px !important;
+}
+
+.fs-1-1{
+    font-size: 1.1rem;  
+}
+
+.label-menu{
+    font-family: "Cerebrisans ExtraBold";
+    font-size: 1.2rem;
+}
+
+.card-img{
+    border: 1px solid black;
+    padding: 0.5rem;
+    height: 350px;
+}
+
+.img-slide{
+    object-fit: cover;
+    height: 100%;
+}
+
+.swiper-pagination{
+    position: initial !important;
+    width: auto !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+.swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+    background-color: transparent !important;
+    font-family: "Cerebrisans Bold" !important;
+    font-size: 1rem !important;
+    color: #191919 !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    font-weight: 900 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #af0006 !important;
+    text-decoration-thickness: 2px !important; 
+    text-underline-offset: 4px;
+}
+
+.swiper-button-prev{
+    position: initial !important;
+    color: #af0006 !important;  
+    margin-top: 0px !important;
+    height: auto !important;
+}
+
+.swiper-button-next{
+    position: initial !important;
+    color: #af0006 !important;
+    margin-top: 0px !important;
+    height: auto !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 1.1rem !important;
+}
+
+.section_header{
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.section_header::after{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 6px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.img_header{
+    position: absolute;
+    top: 0;
+    right: 6px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-card{
+    border-radius: 0px !important;
+    border: 1px solid #d8d8d8 !important;
+    background-color: #f9fbf8 !important;
+    padding: 1.5rem !important;
+}
+
+.text-label{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #834427;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #d8d8d8 !important;
+}
+
+.second-card{
+    border: none !important;
+    background-color: #f2f2f2 !important;
+    border-radius: 0px !important;
+    position: relative !important;
+}
+
+.recipe-card{
+    position: absolute !important;
+    top: -32px;
+    right: 24px;
+    background-color: #445e83;
+    bottom: auto;
+    left: auto;
+    height: 32px;
+    min-width: 105px;
+    max-width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-card::before{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 32px;
+    background-image: url(./assets/home/left-round.svg);
+    right: auto;
+    left: -22px;
+}
+
+.recipe-card::after{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 32px;
+    background-image: url(./assets/home/right-round.svg);
+    left: auto;
+    right: -22px;
+    background-repeat: no-repeat;
+}
+
+.recipe-card span{
+    color: white;
+    font-weight: 700;
+    font-family: "Cerebrisans Bold" !important;
+    letter-spacing: 1px;
+    font-size: .85rem;
+}
+
+.second-card .card-header{
+    background-image: url(assets/home/line.png), url(assets/home/line.png);
+    background-position: left 51px, left 94px;
+    background-repeat: repeat-x;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.second-card .card-header h3{
+    font-family: "Kalam" !important;
+    line-height: 3rem;
+    margin-bottom: 0px;
+}
+
+
+@media (max-width: 992px){
+    #card-podcast{
+        padding-left: 0px !important;
+    }
+}
+
+.recipe-img{
+    position: relative;
+}
+
+.recipe-img::before{
+    background-image: url(./assets/home/sticker.png);
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: auto;
+    right: auto;
+}
+
+.second-card .card-body{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.second-card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 40px 30px 0 rgba(44,44,44,.3);
+}
+
+.border-1px{
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ol{
+    counter-reset: list;
+    list-style-type: none;
+    padding-left: 0px !important;
+}
+
+ol li{
+    padding-left: 5rem;
+    position: relative;
+    border-bottom: 1px solid #e5e4e4;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+ol li::before{
+    position: absolute;
+    content: counter(list) ".";
+    counter-increment: list;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    font-family: "Cerebrisans ExtraBold";
+    color: #000;
+    left: 14px;
+}
+
+.card-product{
+    border-radius: 0px !important;
+}
+
+.card-product-img{
+    height: 200px;
+    padding: 15px;
+    background-color: #f7f6f2 !important;
+}
+
+.card-product-img img{
+    object-fit: contain;
+}
+
+.bg-form{
+    background-image: url(./assets/home/bg-form.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 330px;
+}
+
+@media (min-width: 1400px){
+    .bg-form{
+        margin-left: -9rem !important;
+    }
+    #content-form{
+        padding-left: 10rem !important;
+    }
+
+    #icon-17{
+        right: -200px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width:1400px){
+    .bg-form{
+        margin-left: -7rem !important;
+    }
+    #content-form{
+        padding-left: 8.5rem !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px){
+    .bg-form{
+        margin-left: -1rem !important;
+    }
+
+    #content-form{
+        padding-left: 2.5rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    .bg-form{
+        margin-left: -8.3rem !important;
+    }
+
+    #content-form{
+        padding-left: 9.5rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px){
+    #content-form{
+        padding-left: 1rem !important;
+    }
+}
+
+
+@media (max-width:1830px){
+    #icon-17{
+        right: -300px;
+    }
+}
+
+@media (max-width:1640px){
+    #icon-17{
+        right: -400px;
+    }
+}
+
+@media (max-width:1440px){
+    #icon-17{
+        right: -500px;
+    }
+}
+
+@media (max-width:1270px){
+    #icon-17{
+        display: none;
+    }
+}
